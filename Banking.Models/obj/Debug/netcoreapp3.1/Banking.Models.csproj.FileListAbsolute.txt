@@ -1,0 +1,8 @@
+/home/nhn/GW_Test/LearnTDD.Banking/Banking.Models/obj/Debug/netcoreapp3.1/Banking.Models.csprojAssemblyReference.cache
+/home/nhn/GW_Test/LearnTDD.Banking/Banking.Models/obj/Debug/netcoreapp3.1/Banking.Models.AssemblyInfoInputs.cache
+/home/nhn/GW_Test/LearnTDD.Banking/Banking.Models/obj/Debug/netcoreapp3.1/Banking.Models.AssemblyInfo.cs
+/home/nhn/GW_Test/LearnTDD.Banking/Banking.Models/bin/Debug/netcoreapp3.1/Banking.Models.deps.json
+/home/nhn/GW_Test/LearnTDD.Banking/Banking.Models/bin/Debug/netcoreapp3.1/Banking.Models.dll
+/home/nhn/GW_Test/LearnTDD.Banking/Banking.Models/bin/Debug/netcoreapp3.1/Banking.Models.pdb
+/home/nhn/GW_Test/LearnTDD.Banking/Banking.Models/obj/Debug/netcoreapp3.1/Banking.Models.dll
+/home/nhn/GW_Test/LearnTDD.Banking/Banking.Models/obj/Debug/netcoreapp3.1/Banking.Models.pdb

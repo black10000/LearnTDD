@@ -1,0 +1,15 @@
+/home/nhn/GW_Test/LearnTDD.Banking/Banking.Cli/obj/Debug/netcoreapp3.1/Banking.Cli.csprojAssemblyReference.cache
+/home/nhn/GW_Test/LearnTDD.Banking/Banking.Cli/obj/Debug/netcoreapp3.1/Banking.Cli.AssemblyInfoInputs.cache
+/home/nhn/GW_Test/LearnTDD.Banking/Banking.Cli/obj/Debug/netcoreapp3.1/Banking.Cli.AssemblyInfo.cs
+/home/nhn/GW_Test/LearnTDD.Banking/Banking.Cli/bin/Debug/netcoreapp3.1/Banking.Cli
+/home/nhn/GW_Test/LearnTDD.Banking/Banking.Cli/bin/Debug/netcoreapp3.1/Banking.Cli.deps.json
+/home/nhn/GW_Test/LearnTDD.Banking/Banking.Cli/bin/Debug/netcoreapp3.1/Banking.Cli.runtimeconfig.json
+/home/nhn/GW_Test/LearnTDD.Banking/Banking.Cli/bin/Debug/netcoreapp3.1/Banking.Cli.runtimeconfig.dev.json
+/home/nhn/GW_Test/LearnTDD.Banking/Banking.Cli/bin/Debug/netcoreapp3.1/Banking.Cli.dll
+/home/nhn/GW_Test/LearnTDD.Banking/Banking.Cli/bin/Debug/netcoreapp3.1/Banking.Cli.pdb
+/home/nhn/GW_Test/LearnTDD.Banking/Banking.Cli/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/home/nhn/GW_Test/LearnTDD.Banking/Banking.Cli/bin/Debug/netcoreapp3.1/Banking.Models.dll
+/home/nhn/GW_Test/LearnTDD.Banking/Banking.Cli/bin/Debug/netcoreapp3.1/Banking.Models.pdb
+/home/nhn/GW_Test/LearnTDD.Banking/Banking.Cli/obj/Debug/netcoreapp3.1/Banking.Cli.csproj.CopyComplete
+/home/nhn/GW_Test/LearnTDD.Banking/Banking.Cli/obj/Debug/netcoreapp3.1/Banking.Cli.dll
+/home/nhn/GW_Test/LearnTDD.Banking/Banking.Cli/obj/Debug/netcoreapp3.1/Banking.Cli.pdb

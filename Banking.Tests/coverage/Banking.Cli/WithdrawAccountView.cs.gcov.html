@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - lcov.info - Banking.Cli/WithdrawAccountView.cs</title>
+  <link rel="stylesheet" type="text/css" href="../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../index.html">top level</a> - <a href="index.html">Banking.Cli</a> - WithdrawAccountView.cs<span style="font-size: 80%;"> (source / <a href="WithdrawAccountView.cs.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">lcov.info</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">15</td>
+            <td class="headerCovTableEntry">15</td>
+            <td class="headerCovTableEntryHi">100.0 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2020-01-29 16:46:16</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">2</td>
+            <td class="headerCovTableEntry">2</td>
+            <td class="headerCovTableEntryHi">100.0 %</td>
+          </tr>
+          <tr><td><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">          Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>            : using System;</a>
+<span class="lineNum">       2 </span>            : using System.IO;
+<span class="lineNum">       3 </span>            : using Banking.Models;
+<span class="lineNum">       4 </span>            : using Newtonsoft.Json;
+<span class="lineNum">       5 </span>            : 
+<span class="lineNum">       6 </span>            : namespace Banking.Cli
+<span class="lineNum">       7 </span>            : {
+<a name="8"><span class="lineNum">       8 </span>            :     public class WithdrawAccountView : View</a>
+<span class="lineNum">       9 </span>            :     {
+<span class="lineNum">      10 </span>            :         public WithdrawAccountView(string header, IShell shell, IRepository repo)
+<span class="lineNum">      11 </span><span class="lineCov">          1 :         : base(header, shell, repo)</span>
+<span class="lineNum">      12 </span><span class="lineCov">          1 :         {</span>
+<a name="13"><span class="lineNum">      13 </span>            : </a>
+<span class="lineNum">      14 </span><span class="lineCov">          1 :         }</span>
+<span class="lineNum">      15 </span>            :         protected override void ShowContent()
+<span class="lineNum">      16 </span><span class="lineCov">          1 :         {</span>
+<span class="lineNum">      17 </span><span class="lineCov">          1 :             Shell.Write(&quot;Account No:&quot;);</span>
+<span class="lineNum">      18 </span><span class="lineCov">          1 :             var accountId = Convert.ToInt32(Shell.ReadLine());</span>
+<span class="lineNum">      19 </span><span class="lineCov">          1 :             Shell.Write(&quot;Balance:&quot;);</span>
+<span class="lineNum">      20 </span><span class="lineCov">          1 :             var amount = Convert.ToDecimal(Shell.ReadLine());</span>
+<span class="lineNum">      21 </span><span class="lineCov">          1 :             Account account = JsonConvert.DeserializeObject&lt;Account&gt;(File.ReadAllText($&quot;{accountId}.acc&quot;));</span>
+<span class="lineNum">      22 </span><span class="lineCov">          1 :             account.Withdraw(amount);</span>
+<span class="lineNum">      23 </span><span class="lineCov">          1 :             Repository.Save(account);</span>
+<span class="lineNum">      24 </span><span class="lineCov">          1 :             Shell.WriteLine($&quot;Account {accountId} successfully withdraw amount {amount}&quot;);</span>
+<span class="lineNum">      25 </span><span class="lineCov">          1 :             Shell.WriteLine(&quot;Press Enter to continue...&quot;);</span>
+<span class="lineNum">      26 </span><span class="lineCov">          1 :             Shell.ReadLine();</span>
+<span class="lineNum">      27 </span><span class="lineCov">          1 :         }</span>
+<span class="lineNum">      28 </span>            :     }
+<span class="lineNum">      29 </span>            : }
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.13</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>
